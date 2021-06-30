@@ -20,3 +20,13 @@ body {
     color: #81391a;
    
   }
+
+  #twentyFourHourClock{
+    font-size: 10em;
+    text-align: center;
+    font-family: 'Oswald';
+    font-weight: 300;
+    color: #b84616;
+    margin: 100px auto;
+    margin-top: -4px;
+  }
