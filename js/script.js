@@ -1,52 +1,31 @@
-window.onload = function() {
-    clock();  
-      function clock() {
-      var now = new Date();
-      var TwentyFourHour = now.getHours();
-      var hour = now.getHours();
-      var min = now.getMinutes();
-      var sec = now.getSeconds();
-      var mid = 'pm';
-      if (min < 10) {
-        min = "0" + min;
-      }
-      if (hour > 12) {
-        hour = hour - 12;
-      }    
-      if(hour==0){ 
-        hour=12;
-      }
-      if(TwentyFourHour < 12) {
-         mid = 'am';
-      }     
-    document.getElementById('twelve-hour-clock').innerHTML =     hour+':'+min+':'+sec +' '+mid ;
-      setTimeout(clock, 1000);
-      }
-  }
+// New-york
+let newYorkTwelveHour = setInterval(function(){newYorkClock()},1000);
+function newYorkClock(){ 
+let newYorkdate = new Date();
+let newYorktime = newYorkdate.toLocaleTimeString('en-US',{timeZone: 'America/New_York'});
+document.getElementById("newYork-twelve-hour-clock").innerHTML = newYorktime;
+}
 
-  function currentTime() {
-    var date = new Date(); /* creating object of Date class */
-    var hour = date.getHours();
-    var min = date.getMinutes();
-    var sec = date.getSeconds();
-    hour = updateTime(hour);
-    min = updateTime(min);
-    sec = updateTime(sec);
-    document.getElementById("twentyFourHourClock").innerText = hour + " : " + min + " : " + sec; /* adding time to the div */
-      var t = setTimeout(function(){ currentTime() }, 1000); /* setting timer */
-  }
-  
-  function updateTime(k) {
-    if (k < 10) {
-      return "0" + k;
-    }
-    else {
-      return k;
-    }
-  }
-  
-  currentTime(); /* calling currentTime() function to initiate the process */
-  
-  
-  
-  Resources
+// Berlin-Europe
+let berlinEuropeTweentyFourHour = setInterval(function(){berlinClock()},1000);
+function berlinClock(){ 
+let berlinDate = new Date();
+let berlinTime = berlinDate.toLocaleTimeString('de-DE',{hour12: false, timeZone: 'Europe/Berlin'});
+document.getElementById("europeBerlinTwentyFourHourClock").innerHTML = berlinTime;
+}
+
+// Nigeria-abuja
+let  nigeriaAbujaTwelveHour = setInterval(function(){nigeriaClock()},1000);
+function nigeriaClock(){ 
+let nigeriaDate= new Date();
+let nigeriaTime = nigeriaDate.toLocaleTimeString('ig-NG', {timeZone:'Africa/Lagos'});
+document.getElementById("NigeriaAbujaTwelveHourClock").innerHTML = nigeriaTime;
+}
+
+// Liberia-monrovia
+let liberiaMonroviaTweentyFourHour = setInterval(function(){liberiaClock()},1000);
+function liberiaClock(){ 
+let liberiaDate = new Date();
+let liberiaTime = liberiaDate.toLocaleTimeString('en-LR', {timeZone:'Africa/Monrovia'});
+document.getElementById("LiberiaMonroviaTwentyHourClock").innerHTML = liberiaTime;
+}

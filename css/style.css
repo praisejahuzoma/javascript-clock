@@ -2,8 +2,8 @@ body {
     background-color: #222;
     font-family: sans-serif;
   }
-  #twelve-hour-clock {
-    font-size: 10em;
+  #newYork-twelve-hour-clock {
+    font-size: 4em;
     text-align: center;
     font-family: 'Oswald';
     font-weight: 300;
@@ -13,7 +13,7 @@ body {
   }
 
   .clock{
-    font-size: 2em;
+    font-size: 1em;
     text-align: center;
     font-family: 'Oswald';
     font-weight: 300;
@@ -21,8 +21,42 @@ body {
    
   }
 
-  #twentyFourHourClock{
-    font-size: 10em;
+  #europeBerlinTwentyFourHourClock{
+    font-size: 4em;
+    text-align: center;
+    font-family: 'Oswald';
+    font-weight: 300;
+    color: #b84616;
+    margin: 100px auto;
+    margin-top: -4px;
+  }
+  .new-york{
+    margin-left: -600px;
+    margin-top: 100px;
+  }
+  .europe-berlin{
+    margin-left: -600px;
+    margin-top: 100px;
+  }
+  .nigeria-abuja{
+    margin-left: 350px;
+    margin-top: -415px;
+  }
+  #NigeriaAbujaTwelveHourClock{
+    font-size: 4em;
+    text-align: center;
+    font-family: 'Oswald';
+    font-weight: 300;
+    color: #b84616;
+    margin: 100px auto;
+    margin-top: -4px;
+  }
+  .liberia-monrovia{
+    margin-left: 350px;
+  
+  }
+  #LiberiaMonroviaTwentyHourClock{
+    font-size: 4em;
     text-align: center;
     font-family: 'Oswald';
     font-weight: 300;
