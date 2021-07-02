@@ -29,3 +29,7 @@ let liberiaDate = new Date();
 let liberiaTime = liberiaDate.toLocaleTimeString('en-LR', {timeZone:'Africa/Monrovia'});
 document.getElementById("LiberiaMonroviaTwentyHourClock").innerHTML = liberiaTime;
 }
+
+const year = new Date().getFullYear();
+const yearText = document.querySelector('.year');
+yearText.innerHTML = year;

@@ -64,3 +64,9 @@ body {
     margin: 100px auto;
     margin-top: -4px;
   }
+  .copyRight{
+    color: #e25316;
+    margin-top: 130px;
+    float: right;
+    font-size: 15px;
+  }
